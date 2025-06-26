@@ -46,6 +46,12 @@ select * FROM Appointments WHERE patient_id=1 OR patient_id=2;
 -- LIKE
 SELECT * FROM Prescriptions
 WHERE dosage LIKE '%once%';
+SELECT * FROM Patients
+WHERE name LIKE 'D%';
+SELECT name, specialization FROM Doctors
+WHERE specialization LIKE '%gist';
+SELECT * FROM Nurses
+WHERE name LIKE 'N_______________';
 
 -- ORDER BY
 SELECT * FROM Rooms
